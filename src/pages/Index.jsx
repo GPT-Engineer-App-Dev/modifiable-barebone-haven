@@ -15,7 +15,12 @@ const Index = () => {
         <p className="mb-4">This is a bare-bones application that you can modify and build upon.</p>
         <div className="mb-4">
           <p>Count: {count}</p>
-          <Button onClick={() => setCount(count + 1)} className="mr-2">Increment</Button>
+          <Button 
+            onClick={() => setCount(count + 1)} 
+            className="mr-2 bg-green-500 hover:bg-green-600 active:bg-green-700 text-white"
+          >
+            Increment
+          </Button>
           <Button onClick={() => setCount(count - 1)} variant="outline">Decrement</Button>
         </div>
       </main>
